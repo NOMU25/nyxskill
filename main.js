@@ -1,2 +1,2 @@
-console.log("Nyxskill project");
+console.log("Nyxskill project hehe");
         
