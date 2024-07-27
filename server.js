@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json({ extended : false }));
 
-app.get('/', (req, res) => res.send('Niggas in paris'));
+app.get('/', (req, res) => res.send('nyxskill'));
 
 // app.use('')
 
