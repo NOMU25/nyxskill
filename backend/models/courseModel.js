@@ -1,23 +1,23 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const courseSchema = mongoose.Schema(
-    {
-        title:{
-            type: String,
-            required: true,
-        },
-        courseAuthor:{
-            type: String,
-            required: true,
-        },
-        courseYear:{
-            type: Number,
-            required: true,
-        },
+  {
+    title: {
+      type: String,
+      required: true,
     },
-    {
-        timestamps: true,
-    }
+    author: {
+      type: String,
+      required: true,
+    },
+    publishYear: {
+      type: Number,
+      required: true,
+    },
+  },
+  {
+    timestamps: true,
+  }
 );
 
-export const Course = mongoose.model('Cat',{name: courseSchema});
+export const Course = mongoose.model('Course', courseSchema);
